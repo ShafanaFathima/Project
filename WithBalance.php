@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobLab - Mobile Unverified Employers</title>
+    <title>JobLab - Employers With Balance</title>
 
     <link rel="shortcut icon" type="image/png" href="https://script.viserlab.com/joblab/assets/images/logo_icon/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -677,7 +677,7 @@
             <div class="body-wrapper">
                 <div class="bodywrapper__inner">
                                         <div class="d-flex mb-30 flex-wrap gap-3 justify-content-between align-items-center">
-    <h6 class="page-title">Mobile Unverified Employers</h6>
+    <h6 class="page-title">Employers With Balance</h6>
     <div class="d-flex flex-wrap justify-content-end gap-2 align-items-center breadcrumb-plugins">
             <form class="d-flex flex-wrap gap-2">
             <div class="input-group w-auto flex-fill">
@@ -708,7 +708,679 @@
                             </thead>
                             <tbody>
                                                                     <tr>
-                                        <td class="text-muted text-center" colspan="100%">Data not found</td>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/266.png"
+                                                        alt="Nova Enterprises" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Nova Enterprises</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/281">
+                                                            <span>@</span>saed12
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AX</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2024-02-22 02:03 AM</span>
+                                            <span>1 year ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$2,200.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/281"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/281"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/249.png"
+                                                        alt="Nova Enterprises" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Nova Enterprises</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/264">
+                                                            <span>@</span>bis123
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AI</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2023-11-07 12:15 AM</span>
+                                            <span>1 year ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$1.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/264"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/264"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/201.png"
+                                                        alt="Next Corp" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Next Corp</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/216">
+                                                            <span>@</span>arulemp
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AW</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2023-06-07 04:34 PM</span>
+                                            <span>2 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$342.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/216"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/216"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/183.png"
+                                                        alt="Global Enterprises" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Global Enterprises</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/198">
+                                                            <span>@</span>roshanp
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AX</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2023-05-01 03:06 PM</span>
+                                            <span>2 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$201.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/198"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/198"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/151.png"
+                                                        alt="Next Systems" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Next Systems</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/166">
+                                                            <span>@</span>najuxu
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AM</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2022-11-16 06:16 PM</span>
+                                            <span>2 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$891.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/166"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/166"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/149.png"
+                                                        alt="Nova Group" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Nova Group</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/164">
+                                                            <span>@</span>cmdkadir
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AQ</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2022-11-05 11:14 PM</span>
+                                            <span>2 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$14.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/164"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/164"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/144.png"
+                                                        alt="Future Enterprises" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Future Enterprises</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/159">
+                                                            <span>@</span>cydona
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AX</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2022-08-22 12:22 PM</span>
+                                            <span>3 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$980.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/159"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/159"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/130.png"
+                                                        alt="Cloud Industries" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Cloud Industries</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/145">
+                                                            <span>@</span>parrot
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AD</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2022-06-16 11:20 AM</span>
+                                            <span>3 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$3,981.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/145"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/145"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/129.png"
+                                                        alt="Global Systems" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Global Systems</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/144">
+                                                            <span>@</span>test12345
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AL</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2022-06-09 10:08 AM</span>
+                                            <span>3 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$10.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/144"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/144"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/123.png"
+                                                        alt="Info Systems" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Info Systems</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/138">
+                                                            <span>@</span>nuraxyny
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AL</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2022-05-19 12:03 PM</span>
+                                            <span>3 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$1,000.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/138"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/138"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/26.png"
+                                                        alt="Global Enterprises" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Global Enterprises</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/41">
+                                                            <span>@</span>jmambo
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AL</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2021-10-02 04:42 AM</span>
+                                            <span>3 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$960.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/41"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/41"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/14.png"
+                                                        alt="Info Networks" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Info Networks</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/29">
+                                                            <span>@</span>vodacom
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AU</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2021-09-08 03:17 PM</span>
+                                            <span>4 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$980.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/29"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/29"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/9.png"
+                                                        alt="Nova Corp" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Nova Corp</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/24">
+                                                            <span>@</span>mduser123
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AW</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2021-08-24 11:32 AM</span>
+                                            <span>4 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$581.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/24"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/24"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/7.png"
+                                                        alt="Cloud Enterprises" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Cloud Enterprises</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/22">
+                                                            <span>@</span>mdonejeo
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AL</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2021-08-10 12:27 PM</span>
+                                            <span>4 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$2.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/22"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/22"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>
+                                            <div class="user">
+                                                <div class="thumb">
+                                                    <img src="https://script.viserlab.com/joblab/assets/images/employer/5.png"
+                                                        alt="Blue Group" class="plugin_bg">
+                                                </div>
+                                                <span class="name">
+                                                    <span class="fw-bold d-block">Blue Group</span>
+                                                    <span class="text--small">
+                                                        <a href="https://script.viserlab.com/joblab/admin/employers/detail/20">
+                                                            <span>@</span>khanom
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">[Email is protected for the demo]</span>
+                                            <span>[Mobile is protected for the demo]</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold"
+                                                title="">AW</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">2021-08-10 12:27 PM</span>
+                                            <span>4 years ago</span>
+                                        </td>
+                                        <td>
+                                            <span class="fw-bold">$4,861.00 USD</span>
+                                        </td>
+                                        <td><span class="badge badge--dark">No</span></td>
+                                        <td>
+                                            <div class="button--group">
+                                                <a href="https://script.viserlab.com/joblab/admin/employers/detail/20"
+                                                    class="btn btn-sm btn-outline--primary">
+                                                    <i class="las la-desktop"></i>Details                                                </a>
+                                                                                                    <button class="btn btn-outline--success btn-sm confirmationBtn"
+                                                        data-action="https://script.viserlab.com/joblab/admin/employers/featured/20"
+                                                        data-question="Are you sure to featured this employer?">
+                                                        <i class="las la-star-of-life"></i> Featured                                                    </button>
+                                                                                            </div>
+                                        </td>
                                     </tr>
                                                             </tbody>
                         </table>

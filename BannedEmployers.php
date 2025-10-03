@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobLab - Mobile Unverified Employers</title>
+    <title>JobLab - Banned Employers</title>
 
     <link rel="shortcut icon" type="image/png" href="https://script.viserlab.com/joblab/assets/images/logo_icon/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
         <div class="sidebar__logo">
             <a href="https://script.viserlab.com/joblab/admin/dashboard" class="sidebar__main-logo"><img src="https://script.viserlab.com/joblab/assets/images/logo_icon/logo.png" alt="image"></a>
         </div>
-                <div class="sidebar__menu-wrapper">
+               <div class="sidebar__menu-wrapper">
             <ul class="sidebar__menu">
                                                                                                         <li class="sidebar-menu-item active">
                             <a href="/dashboard" class="nav-link ">
@@ -677,7 +677,7 @@
             <div class="body-wrapper">
                 <div class="bodywrapper__inner">
                                         <div class="d-flex mb-30 flex-wrap gap-3 justify-content-between align-items-center">
-    <h6 class="page-title">Mobile Unverified Employers</h6>
+    <h6 class="page-title">Banned Employers</h6>
     <div class="d-flex flex-wrap justify-content-end gap-2 align-items-center breadcrumb-plugins">
             <form class="d-flex flex-wrap gap-2">
             <div class="input-group w-auto flex-fill">

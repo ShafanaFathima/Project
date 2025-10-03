@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobLab - Email Unverified Users</title>
+    <title>JobLab - Email Unverified Employers</title>
 
     <link rel="shortcut icon" type="image/png" href="https://script.viserlab.com/joblab/assets/images/logo_icon/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -526,7 +526,7 @@
                                     <div class="navbar-notifi__right">
                                         <h6 class="notifi__title">New employer registered</h6>
                                         <span class="time"><i class="far fa-clock"></i>
-                                            12 hours ago</span>
+                                            14 hours ago</span>
                                     </div>
                                 </div>
                             </a>
@@ -677,7 +677,7 @@
             <div class="body-wrapper">
                 <div class="bodywrapper__inner">
                                         <div class="d-flex mb-30 flex-wrap gap-3 justify-content-between align-items-center">
-    <h6 class="page-title">Email Unverified Users</h6>
+    <h6 class="page-title">Email Unverified Employers</h6>
     <div class="d-flex flex-wrap justify-content-end gap-2 align-items-center breadcrumb-plugins">
             <form class="d-flex flex-wrap gap-2">
             <div class="input-group w-auto flex-fill">
@@ -697,10 +697,12 @@
                         <table class="table table--light style--two">
                             <thead>
                                 <tr>
-                                    <th>User</th>
-                                    <th>Email-Mobile</th>
+                                    <th>Company | Username</th>
+                                    <th>Email | Phone</th>
                                     <th>Country</th>
                                     <th>Joined At</th>
+                                    <th>Balance</th>
+                                    <th>Is Featured</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -715,6 +717,30 @@
                             </div>
         </div>
     </div>
+
+    <div id="confirmationModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirmation Alert!</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="las la-times"></i>
+                </button>
+            </div>
+            <form method="POST">
+                <input type="hidden" name="_token" value="e8B6hYDis22Z9BUWCYH988XlaJUiYXNcgL9gSlnM" autocomplete="off">                <div class="modal-body">
+                    <p class="question"></p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn--dark" data-bs-dismiss="modal">No</button>
+                    <button type="submit" class="btn btn--primary">Yes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
                 </div>
             </div>
         </div>
@@ -823,7 +849,20 @@
         })(jQuery);
     </script>
 
-        <script>
+    
+<script>
+    (function ($) {
+        "use strict";
+        $(document).on('click','.confirmationBtn', function () {
+            var modal   = $('#confirmationModal');
+            let data    = $(this).data();
+            modal.find('.question').text(`${data.question}`);
+            modal.find('form').attr('action', `${data.action}`);
+            modal.modal('show');
+        });
+    })(jQuery);
+</script>
+    <script>
         if($('li').hasClass('active')){
             $('.sidebar__menu-wrapper').animate({
                 scrollTop: eval($(".active").offset().top - 320)
