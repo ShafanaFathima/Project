@@ -1,157 +1,196 @@
-<?php
 
-namespace App\Controllers;
+<!DOCTYPE html>
+<html lang="en">
 
-class Login extends BaseController
-{
-    public function index()
-    {
-        if (session()->has('logged_in')) {
-            return redirect()->to('dashboard');
-        }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobLab - Admin Login</title>
 
-        return view('Login');
+    <link rel="shortcut icon" type="image/png" href="https://script.viserlab.com/joblab/assets/images/logo_icon/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://script.viserlab.com/joblab/assets/global/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://script.viserlab.com/joblab/assets/admin/css/vendor/bootstrap-toggle.min.css">
+    <link rel="stylesheet" href="https://script.viserlab.com/joblab/assets/global/css/all.min.css">
+    <link rel="stylesheet" href="https://script.viserlab.com/joblab/assets/global/css/line-awesome.min.css">
+
+    
+    <link rel="stylesheet" href="https://script.viserlab.com/joblab/assets/global/css/select2.min.css">
+    <link rel="stylesheet" href="https://script.viserlab.com/joblab/assets/admin/css/app.css">
+
+    </head>
+
+<body>
+   <?php if (session()->getFlashdata('error')): ?>
+        <p style="color: red;"><?= session()->getFlashdata('error') ?></p>
+    <?php endif; ?>
+
+    <form action="/login" method="post">
+
+    <div class="login-main"
+    style="background-image: url('https://script.viserlab.com/joblab/assets/admin/images/login.jpg')">
+    <div class="container custom-container">
+        <div class="row justify-content-center">
+            <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-11">
+                <div class="login-area">
+                    <div class="login-wrapper">
+                        <div class="login-wrapper__top">
+                            <h3 class="title text-white">Welcome to <strong>JobLab</strong></h3>
+                            <p class="text-white">Admin Login to JobLab
+                                Dashboard</p>
+                        </div>
+                        <div class="login-wrapper__body">
+                            <form action="https://script.viserlab.com/joblab/admin" method="POST"
+                                class="cmn-form mt-30 verify-gcaptcha login-form">
+                                <input type="hidden" name="_token" value="fHXpEawiXKO2USRorZGpxOpfEOKgNUPRzuwdNDcq" autocomplete="off">                                <div class="form-group">
+                                    <label>Username</label>
+                                    <input type="text" class="form-control" value="admin" name="username" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="d-flex justify-content-between">
+                                        <label>Password</label>
+                                        <a href="https://script.viserlab.com/joblab/admin/password/reset" class="forget-text">Forgot Password?</a>
+                                    </div>
+                                    <input type="password" class="form-control" name="password" value="admin" required>
+                                </div>
+                                <div class="mb-3">
+        
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<div class="g-recaptcha" data-sitekey="6LdPC88fAAAAADQlUf_DV6Hrvgm-pZuLJFSLDOWV" data-callback="verifyCaptcha"></div>
+<div id="g-recaptcha-error"></div>    </div>
+                                    <button type="submit" class="btn cmn-btn w-100">LOGIN</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://script.viserlab.com/joblab/assets/global/js/jquery-3.7.1.min.js"></script>
+    <script src="https://script.viserlab.com/joblab/assets/global/js/bootstrap.bundle.min.js"></script>
+    <script src="https://script.viserlab.com/joblab/assets/admin/js/vendor/bootstrap-toggle.min.js"></script>
+
+    <link href="https://script.viserlab.com/joblab/assets/global/css/iziToast.min.css" rel="stylesheet">
+<link href="https://script.viserlab.com/joblab/assets/global/css/iziToast_custom.css" rel="stylesheet">
+<script src="https://script.viserlab.com/joblab/assets/global/js/iziToast.min.js"></script>
+
+<script>
+    "use strict";
+    const colors = {
+        success: '#28c76f',
+        error: '#eb2222',
+        warning: '#ff9f43',
+        info: '#1e9ff2',
     }
-  
-    public function login()
-    {
-        $username = 'admin';
-        $password = 'admin'; 
 
-        $inputUsername = $this->request->getPost('username');
-        $inputPassword = $this->request->getPost('password');
+    const icons = {
+        success: 'fas fa-check-circle',
+        error: 'fas fa-times-circle',
+        warning: 'fas fa-exclamation-triangle',
+        info: 'fas fa-exclamation-circle',
+    }
 
-        if ($inputUsername === $username && $inputPassword === $password) {
-            session()->set([
-                'logged_in' => true,
-                'username' => $inputUsername
-            ]);
+    const notifications = [];
+    const errors = [];
 
-            return redirect()->to('dashboard');
+
+    const triggerToaster = (status, message) => {
+        iziToast[status]({
+            title: status.charAt(0).toUpperCase() + status.slice(1),
+            message: message,
+            position: "topRight",
+            backgroundColor: '#fff',
+            icon: icons[status],
+            iconColor: colors[status],
+            progressBarColor: colors[status],
+            titleSize: '1rem',
+            messageSize: '1rem',
+            titleColor: '#474747',
+            messageColor: '#a2a2a2',
+            transitionIn: 'obunceInLeft'
+        });
+    }
+
+    if (notifications.length) {
+        notifications.forEach(element => {
+            triggerToaster(element[0], element[1]);
+        });
+    }
+
+    if (errors.length) {
+        errors.forEach(error => {
+            triggerToaster('error', error);
+        });
+    }
+
+    function notify(status, message) {
+        if (typeof message == 'string') {
+            triggerToaster(status, message);
         } else {
-            return redirect()->back()->with('error', 'Invalid username or password.');
+            $.each(message, (i, val) => triggerToaster(status, val));
         }
     }
+</script>
+    
+    <script src="https://script.viserlab.com/joblab/assets/global/js/nicEdit.js"></script>
+    <script src="https://script.viserlab.com/joblab/assets/global/js/select2.min.js"></script>
+    <script src="https://script.viserlab.com/joblab/assets/admin/js/app.js"></script>
 
-    public function logout()
-    {
-        session()->destroy();
+    
+    <script>
+        "use strict";
+        bkLib.onDomLoaded(function() {
+            $(".nicEdit").each(function(index) {
+                $(this).attr("id", "nicEditor" + index);
+                new nicEditor({
+                    fullPanel: true
+                }).panelInstance('nicEditor' + index, {
+                    hasPanel: true
+                });
+            });
+        });
+        (function($) {
+            $(document).on('mouseover ', '.nicEdit-main,.nicEdit-panelContain', function() {
+                $('.nicEdit-main').focus();
+            });
 
-        return redirect()->to('/login');
-    }
-}
+            $('.breadcrumb-nav-open').on('click', function() {
+                $(this).toggleClass('active');
+                $('.breadcrumb-nav').toggleClass('active');
+            });
 
-//    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-//  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-//<link rel="preconnect" href="https://fonts.googleapis.com">
-//<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-//<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-/* .poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
+            $('.breadcrumb-nav-close').on('click', function() {
+                $('.breadcrumb-nav').removeClass('active');
+            });
 
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
+            if ($('.topTap').length) {
+                $('.breadcrumb-nav-open').removeClass('d-none');
+            }
+        })(jQuery);
+    </script>
 
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+            <script>
+            (function($) {
+                "use strict"
+                $('.verify-gcaptcha').on('submit', function() {
+                    var response = grecaptcha.getResponse();
+                    if (response.length == 0) {
+                        document.getElementById('g-recaptcha-error').innerHTML =
+                            '<span class="text--danger">Captcha field is required.</span>';
+                        return false;
+                    }
+                    return true;
+                });
 
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+                window.verifyCaptcha = () => {
+                    document.getElementById('g-recaptcha-error').innerHTML = '';
+                }
+            })(jQuery);
+        </script>
+        </form>
+    </body>
 
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-Read our FAQ
-Develop in web*/
+</html>
